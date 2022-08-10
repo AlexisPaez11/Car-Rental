@@ -17,7 +17,6 @@ img::selection {
     background-color: transparent;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-
 :root {
     --color-bg: #F5F5F5;
     --color-primary: #EFC99D;
@@ -29,20 +28,18 @@ img::selection {
     --color-text-variant-hover: #84848430;
     --transition: all .5s ease;
 }
-
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
 body {
-    max-width: 1280px;
+    max-width: 128.0rem;
     background-color: var(--color-bg);
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
     margin: 0 auto;
     padding: 0 2rem;
 }
-
 h1, h2, h3, h4, h5, h6, p {
     color: var(--color-text);
 }
@@ -50,7 +47,6 @@ h2 {
     font-size: 2.2rem;
     font-weight: 900;
 }
-
 .btn {
     font-size: 1.4rem;
     font-weight: 700;
@@ -70,7 +66,6 @@ h2 {
     background-color: var(--color-primary);
     color: var(--color-bg);
 }
-
 
 /* ____________ NAV _____________ */
 nav {
@@ -94,7 +89,7 @@ nav .logo {
 }
 nav .logo span {
     color: var(--color-text);
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: 900;
 }
 nav ul {
@@ -123,28 +118,29 @@ nav .nav-menu-item a.active {
 /* ____________ NAV _____________ */
 
 /* ____________ HEADER _____________ */
+#home .header {
+    padding: 8rem 0 4rem;
+}
 #home .header .header-container {
     display: grid;
     grid-auto-flow: row;
     gap: 2rem;
-    margin: 10rem 0 2rem 0;
+    margin-bottom: 4rem;
 }
 #home .header h1 {
     max-width: 42rem;
     color: var(--color-text);
-    font-size: 64px;
+    font-size: 6.4rem;
     font-weight: 700;
-    line-height: 64px;
+    line-height: 6.4rem;
 }
 #home .header h2 {
     max-width: 38rem;
     color: var(--color-text-variant);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 2.6rem;
 }
-
-
 /* ____________ HEADER MARKS _____________ */
 #home .header-marks {
     display: flex;
@@ -200,6 +196,90 @@ nav .nav-menu-item a.active {
 }
 /* ____________ HEADER MARKS _____________ */
 /* ____________ HEADER _____________ */
+
+/* ____________ GRID IMAGES _____________ */
+#home .gridImages {
+    padding: 4rem 0;
+}
+#home .gridImages .gridImages-section {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+#home .gridImages span {
+    color: var(--color-text-variant);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+#home .gridImages h3 {
+    color: var(--color-text);
+    font-size: 4.8rem;
+    font-weight: 900;
+}
+#home .gridImages p {
+    max-width: 64.0rem;
+    color: var(--color-text);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+}
+/* ____________ GRID IMAGES CONTAINER _____________ */
+#home .gridImages-container img {
+    width: 100%;
+    border-radius: 1.6rem;
+    -webkit-border-radius: 1.6rem;
+    -moz-border-radius: 1.6rem;
+    -ms-border-radius: 1.6rem;
+    -o-border-radius: 1.6rem;
+}
+#home .gridImages-container {
+    display: grid;
+    gap: 1.4rem;
+    margin: 2rem 0 1rem;
+}
+#home .gridImages-container-top,
+#home .gridImages-container-bottom {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1.4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#home .gridImages-container-bottom {
+    padding: 0 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/* ____________ GRID IMAGES CONTAINER _____________ */
+#home .gridImages a {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    color: var(--color-text);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+#home .gridImages a svg {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+#home .gridImages a:hover svg {
+    transform: translateX(.4rem);
+    -webkit-transform: translateX(.4rem);
+    -moz-transform: translateX(.4rem);
+    -ms-transform: translateX(.4rem);
+    -o-transform: translateX(.4rem);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+/* ____________ GRID IMAGES _____________ */
 
 /* ____________ CATALOGUE _____________ */
 .catalogue-section {
@@ -307,8 +387,6 @@ nav .nav-menu-item a.active {
 .car-information div svg path {
     color: var(--color-text);
 }
-
-
 /* ____________ CAR INFORMATION _____________ */
 .car-buttons {
     width: 100%;

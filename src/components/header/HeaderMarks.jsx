@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { IoArrowForward } from 'react-icons/io5' // SeeMore
+import { IoArrowForward } from 'react-icons/io5'
 import { SiMercedes, SiFerrarinv, SiBmw, SiBugatti, SiTesla, SiAudi, SiMclaren, SiFord, SiMitsubishi } from 'react-icons/si';
 
 const HeaderMarks = () => {
