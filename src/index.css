@@ -455,9 +455,8 @@ nav .nav-menu-item a.active {
 .car-information {
     display: grid;
     grid-auto-flow: column;
-    /* justify-content: space-between; */
     gap: .4rem;
-    align-items: flex-start;
+    /* align-items: flex-start; */
 }
 .car-information div {
     display: grid;
