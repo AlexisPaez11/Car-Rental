@@ -4,6 +4,7 @@ import ScrollToTop from './ScrollToTop'
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import Catalogue from './pages/Catalogue'
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/Catalogue' element={<Catalogue />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }
